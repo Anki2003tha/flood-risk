@@ -1,24 +1,10 @@
 # 🌧️🌍 Flood Risk Prediction Dashboard
 ### *AI-Powered Satellite Flood Detection • Grad-CAM Explainability • Interactive Streamlit UI*
 
-<!-- =============================== -->
-<!--         PROJECT BANNER          -->
-<!-- =============================== -->
-
-<!-- Replace banner.png with your exported banner -->
-![Project Banner](banner.png)
-
 
 ---
 
-## 🔗 Live Demo  
-Click the button below to view the project demo:
 
-👉 **[🚀 Launch Demo](#)**  
-*(Replace # with your deployed Streamlit/HF Spaces URL)*
-
-
----
 
 ## 📛 Badges
 
@@ -122,3 +108,4 @@ streamlit run smart_dashboard.py
 - Display results in dashboard
 
 - Chatbot responds using prediction history
+
