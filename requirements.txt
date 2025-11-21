@@ -1,0 +1,20 @@
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.2
+matplotlib>=3.7
+seaborn>=0.12
+opencv-python>=4.7
+rasterio>=1.3
+geopandas>=0.13
+folium>=0.14
+tqdm>=4.65
+tensorboard>=2.11
+# Choose one: TensorFlow or PyTorch (install one)
+tensorflow>=2.11.0
+# torch>=2.2.0 torchvision>=0.16.0
+
+# Optional / useful for satellite APIs
+sentinelsat>=1.1
+xarray>=2023.10
+rioxarray>=0.15
+

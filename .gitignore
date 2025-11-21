@@ -1,0 +1,95 @@
+﻿# Virtual environment
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and binaries
+SEN12FLOOD/
+SEN12FLOOD.zip
+*.zip
+*.tar.gz
+*.h5
+*.hdf5
+*.tif
+*.tiff
+*.npy
+
+# OS files
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Upload copy
+upload_clean/
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and models (do NOT push large data)
+data/
+*.h5
+*.keras
+*.tif
+*.jp2
+*.SAFE/
+
+# Secrets
+.env
+*.pem
+*.key
+
+# OS / IDE
+.DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and models (do NOT push large data)
+data/
+*.h5
+*.keras
+*.tif
+*.jp2
+*.SAFE/
+
+# Secrets
+.env
+*.pem
+*.key
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Git LFS (uncomment and adjust if you use LFS)
+# *.h5 filter=lfs diff=lfs merge=lfs -text
