@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🌧️🌍 Flood Risk Prediction Dashboard
 ### *AI-Powered Satellite Flood Detection • Grad-CAM Explainability • Interactive Streamlit UI*
 
@@ -218,3 +218,4 @@ download_s3_object('s3://<bucket>/<path-to-file>.zip', out_dir='data')
 
 Be careful with disk usage and only download small sample scenes (<1-2 GB) for local experiments.
 >>>>>>> 5f264cd (Initial commit: Flood Risk project)
+
