@@ -6,6 +6,33 @@ import io
 
 MODEL_PATH = Path('model_demo.h5')
 
+import os
+import requests
+
+# Optional: set this environment variable to a direct download URL for the model
+# e.g. export MODEL_URL="https://.../model_demo.h5"
+MODEL_URL = os.environ.get("MODEL_URL", "")
+
+def ensure_model_present():
+    """If `model_demo.h5` is missing and `MODEL_URL` is set, download it."""
+    if MODEL_PATH.exists():
+        return True
+    if not MODEL_URL:
+        return False
+    try:
+        st.info("Downloading model...")
+        resp = requests.get(MODEL_URL, stream=True, timeout=60)
+        resp.raise_for_status()
+        with open(MODEL_PATH, "wb") as f:
+            for chunk in resp.iter_content(chunk_size=8192):
+                if chunk:
+                    f.write(chunk)
+        st.success("Model downloaded")
+        return True
+    except Exception as e:
+        st.error(f"Failed to download model: {e}")
+        return False
+
 
 def inject_theme_css():
     css = r"""
@@ -110,6 +137,8 @@ def main():
     st.title('Flood Risk Visualizer — Interactive Heatmap')
     st.write('Upload an image or use a synthetic sample. The app predicts patch-wise flood risk and overlays a heatmap.')
 
+    # Attempt to download the model if missing and MODEL_URL is configured.
+    ensure_model_present()
     model_tuple = load_model()
     status = model_tuple[0]
     if status == 'tf':
